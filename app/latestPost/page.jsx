@@ -19,7 +19,7 @@ const LatestPost = async () => {
           key={post.id}
           className="hover:scale-y-105 rounded-lg  m-4 w-[200px] pt-1 border-2 hover:bg-gradient-to-r from-purple-400"
         >
-          <Link href={`latestPost/${post.id}`}>
+          <Link href={`/latestPost/${post.id}`}>
             <Image
               src={post.image}
               width={200}
@@ -28,6 +28,7 @@ const LatestPost = async () => {
             ></Image>
             <h1>{post.title}</h1>
             <p>{post.postDate}</p>
+           
           </Link>
         </div>
       ))}

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 async function getLatestPostData(id) {
   const res = await fetch(`http://localhost:3000/api/posts/${id}`);
   if (!res.ok) {
@@ -16,6 +18,9 @@ const Page = async ({ params }) => {
       <ul>
         <li>{posts.title}</li>
         <li>{posts.postDate}</li>
+        <Link href={posts.videoLink} className="text-blue-400">
+          Video links
+        </Link>
       </ul>
     </div>
   );
