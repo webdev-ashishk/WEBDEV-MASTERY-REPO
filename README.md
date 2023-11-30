@@ -4,3 +4,4 @@
 > 2. make footer sticky to bottom - done
 > 3. Create backend for latest post ?
 > 4. fetch data from backend api ?
+> 5. How to use env in nextjs ?
