@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 async function getLatestPostData(id) {
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`);
+  const apiUrl = process.env.API_URL || "http://localhost:3000";
+  const res = await fetch(`${apiUrl}/api/posts/${id}`);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }

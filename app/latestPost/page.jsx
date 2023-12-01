@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 async function getLatestPostData() {
-  const res = await fetch("http://localhost:3000/api/posts");
+  const apiUrl = process.env.API_URL || "http://localhost:3000";
+  const res = await fetch(`${apiUrl}/api/posts`);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
