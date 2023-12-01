@@ -1,11 +1,11 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { AiFillYoutube, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
+import { RiComputerFill } from "react-icons/ri";
 const NavBar = () => {
   const [showMenu, setMenu] = useState(false);
   function toggleMenu() {
@@ -29,12 +29,7 @@ const NavBar = () => {
     <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 flex justify-between mx-2  sticky top-0">
       <div className="flex  gap-4 text-5xl m-2 font-bold ">
         <snap className="">
-          <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
-            alt="logo"
-            height={50}
-            width={50}
-          />
+          <RiComputerFill />
         </snap>
         <h1 className="sm:hidden lg:block md:block font-bold ">
           <Link href={"/"}>SUMAN</Link>
