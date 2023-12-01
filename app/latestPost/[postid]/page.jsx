@@ -22,7 +22,7 @@ const Page = async ({ params }) => {
         return (
           <div
             key={post._id}
-            className="border-2 border-solid border-green-600 flex gap-3 m-5 p-4 rounded-lg flex-wrap w-[800px]"
+            className="sm:w-[400px] md:w-[600px] border-2 border-solid border-green-600 flex gap-3 m-5 p-4 rounded-lg flex-wrap w-[800px] overflow-hidden"
           >
             <ul>
               <li>{post.title}</li>

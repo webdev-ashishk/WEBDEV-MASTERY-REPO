@@ -26,8 +26,8 @@ const NavBar = () => {
     );
   };
   return (
-    <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 flex justify-between mx-2  sticky top-0">
-      <div className="flex  gap-4 text-5xl m-2 font-bold ">
+    <div className="sticky top-0 flex justify-between mx-2 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600">
+      <div className="flex gap-4 m-2 text-5xl font-bold ">
         <snap className="">
           <Image
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
@@ -36,12 +36,12 @@ const NavBar = () => {
             width={50}
           />
         </snap>
-        <h1 className="sm:hidden lg:block md:block font-bold ">
+        <h1 className="font-bold sm:hidden lg:block md:block ">
           <Link href={"/"}>SUMAN</Link>
         </h1>
       </div>
-      <nav className=" lg:block md:hidden sm:hidden flex justify-center items-center m-2">
-        <ul className="sm:text-1xl flex gap-7 mx:text-1xl  md:text-3xl md:font-bold">
+      <nav className="flex items-center justify-center m-2 lg:block md:hidden sm:hidden">
+        <ul className="flex sm:text-1xl gap-7 mx:text-1xl md:text-3xl md:font-bold">
           <li>
             <Link href="/courses">courses</Link>
           </li>
@@ -65,9 +65,10 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
+      {/* when use click to menu button below div appear */}
       {showMenu && (
-        <div className="fixed inset-x-0 top-16 flex flex-col items-center rounded-lg m-2">
-          <ul className="border-2 w-full bg-black text-2xl font-bold text-center">
+        <div className="fixed inset-x-0 flex flex-col items-center h-screen m-2 rounded-lg top-13">
+          <ul className="w-full text-2xl font-bold text-center bg-black border-2">
             <li className="mt-2">
               <Link href="/courses">courses</Link>
             </li>
@@ -96,7 +97,7 @@ const NavBar = () => {
       )}
       <button
         onClick={toggleMenu}
-        className="sm:block md:block lg:hidden m-3 text-3xl font-bold"
+        className="m-3 text-3xl font-bold sm:block md:block lg:hidden"
       >
         {showMenu ? <IoMdClose /> : <AiOutlineMenu />}
       </button>
