@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import LatestPost from "../app/latestPost/page";
 
@@ -7,8 +6,8 @@ const Body = () => {
     <main>
       {/* important links  */}
       <div className="">
-        <h1 className="text-3xl font-bold m-5">Important Links</h1>
-        <ul className="flex text-4xl justify-center gap-8 flex-wrap sm:gap-4">
+        <h1 className="m-5 text-3xl font-bold">Important Links</h1>
+        <ul className="flex flex-wrap justify-center gap-8 text-4xl sm:gap-4">
           <li className="m-2">
             <button
               type="button"
@@ -29,8 +28,8 @@ const Body = () => {
       </div>
       {/* latest post  */}
       <div>
-        <h1 className="text-3xl font-bold m-5">Latest Posts</h1>
-        <div className="flex flex-wrap m-1 gap-3 justify-center items-center">
+        <h1 className="m-5 text-3xl font-bold">Latest Posts</h1>
+        <div className="flex flex-wrap items-center justify-center gap-3 m-1">
           <LatestPost />
         </div>
       </div>

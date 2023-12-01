@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 async function getLatestPostData() {
-  const res = await fetch("http://localhost:3000/api/posts");
+  const apiUrl = process.env.API_URL || "http://localhost:3000";
+  const res = await fetch(`${apiUrl}/api/posts`);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
@@ -13,7 +14,7 @@ const LatestPost = async () => {
   const posts = await getLatestPostData();
   console.log(posts);
   return (
-    <main className="flex flex-wrap justify-center items-center">
+    <main className="flex flex-wrap items-center justify-center">
       {posts.map((post) => (
         <div
           key={post.id}
@@ -27,7 +28,6 @@ const LatestPost = async () => {
               alt="post-image"
             ></Image>
             <h1>{post.heading}</h1>
-            <p>{post.postDate}</p>
           </Link>
         </div>
       ))}
