@@ -26,7 +26,7 @@ const NavBar = () => {
     );
   };
   return (
-    <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 flex justify-between mx-2  sticky top-0">
+    <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 flex justify-between  sticky top-0">
       <div className="flex  gap-4 text-5xl m-2 font-bold ">
         <snap className="">
           <Link href={"/"}>
@@ -63,8 +63,8 @@ const NavBar = () => {
         </ul>
       </nav>
       {showMenu && (
-        <div className="fixed inset-x-0 top-16 flex flex-col items-center rounded-lg m-2">
-          <ul className="border-2 w-full bg-black text-2xl font-bold text-center">
+        <div className="fixed inset-x-0 top-14 flex flex-col items-center rounded-lg ">
+          <ul className="w-full h-screen bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-3xl font-bold text-center">
             <li className="mt-2">
               <Link href="/courses">courses</Link>
             </li>
