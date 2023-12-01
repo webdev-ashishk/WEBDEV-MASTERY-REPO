@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 async function getLatestPostData(id) {
   const apiUrl = process.env.API_URL || "http://localhost:3000";
   const res = await fetch(`${apiUrl}/api/posts/${id}`);
@@ -15,17 +13,24 @@ const Page = async ({ params }) => {
   const posts = _posts.morePost;
   console.log(_posts.morePost);
   return (
-    <div className="border-2 p-2 rounded-lg m-5 flex justify-center items-center w-[500px]">
+    <div className="border-2 p-2 rounded-lg m-5 flex justify-center items-center flex-col flex-wrap">
       post detail page
       {posts.map((post) => {
         return (
-          <div key={post._id}>
-            <ul>
-              <li>{post.title}</li>
-              <li>{post.postDate}</li>
-              <Link href={post.videoLink} className="text-blue-400">
-                Video links
-              </Link>
+          <div key={post._id} className="my-12 flex flex-wrap">
+            <ul className="flex flex-col justify-center items-center">
+              <li className="my-2 font-bold text-2xl">{post.title}</li>
+              <li className="my-2 font-bold bg-green-400 p-2 rounded-lg bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 text-sm px-5 py-2.5 text-center me-2 mb-2">
+                {post.postDate}
+              </li>
+              <iframe
+                className="w-full md:w-3/4 lg:w-1/2 h-48 md:h-64 lg:h-96 mx-auto md:mx-0"
+                src={post.src}
+                title={post.ftitle}
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </ul>
           </div>
         );
