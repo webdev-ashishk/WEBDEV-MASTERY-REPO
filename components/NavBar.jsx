@@ -14,8 +14,7 @@ const NavBar = () => {
   const router = useRouter();
   const currentRoute = usePathname();
   // styles for all links
-  const linkStyle =
-    "flex items-center  h-full no-underline hover:text-gray-600 duration-300";
+  const linkStyle = "flex items-center hover:text-gray-600 duration-300";
 
   // styles for active and non-active links
   const activeStyle = linkStyle + " text-gray-400";
