@@ -5,4 +5,5 @@
 > 3. Create backend for latest post - done
 > 4. fetch data from backend api - done
 > 5. How to use env in next js - done
-> 6. customize scroll bar ?
+> 6. customize scroll bar - done
+> 7. add dark and light more - ?

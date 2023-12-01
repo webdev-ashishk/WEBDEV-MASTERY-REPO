@@ -33,3 +33,32 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* styles/scrollbar.css */
+
+/* Track */
+::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 60px;
+  background-color: rgba(0, 0, 139, 0.256);
+}
+::-webkit-scrollbar-track {
+  width: 8px;
+  border-radius: 60px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background-color: #888; */
+
+  border-radius: 6px; /* Optional: Add border-radius for rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to right,
+    rgba(255, 192, 203, 0.473),
+    rgba(0, 0, 255, 0.416)
+  );
+}

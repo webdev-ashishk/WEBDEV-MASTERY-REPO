@@ -34,12 +34,12 @@ const NavBar = () => {
   return (
     <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 flex justify-between  sticky top-0">
       <div className="flex  gap-4 text-5xl m-2 font-bold ">
-        <snap className="">
+        <snap className="text-black">
           <Link href={"/"}>
             <RiComputerFill />
           </Link>
         </snap>
-        <h1 className="sm:hidden lg:block md:block font-bold ">
+        <h1 className="sm:hidden lg:block md:block font-bold text-black ">
           <Link href={"/"}>SUMAN</Link>
         </h1>
       </div>
