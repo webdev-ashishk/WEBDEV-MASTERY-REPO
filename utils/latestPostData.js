@@ -1,8 +1,7 @@
 export const latestPostData = [
   {
     id: 1,
-    image:
-      "https://codingbytes.com/wp-content/uploads/2022/03/full-stack-web-development.jpg",
+    image: "https://www.livelaw.in/h-upload/2019/04/03/359644-jobs.jpg",
     heading: "JOBS",
     morePost: [
       {

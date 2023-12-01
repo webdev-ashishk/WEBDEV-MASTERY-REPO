@@ -19,8 +19,10 @@ const Page = async ({ params }) => {
         return (
           <div key={post._id} className="my-12 flex flex-wrap">
             <ul className="flex flex-col justify-center items-center">
-              <li className="my-2 font-bold text-2xl">{post.title}</li>
-              <li className="my-2 font-bold bg-green-400 p-2 rounded-lg bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 text-sm px-5 py-2.5 text-center me-2 mb-2">
+              <li className="my-2 font-bold text-2xl text-gray-400">
+                {post.title}
+              </li>
+              <li className="my-2 font-bold bg-green-400 p-2 rounded-lg bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 text-sm px-5 py-2.5 text-center me-2 mb-2 text-black">
                 {post.postDate}
               </li>
               <iframe

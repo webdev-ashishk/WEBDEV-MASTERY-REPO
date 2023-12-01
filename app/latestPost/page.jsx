@@ -18,17 +18,17 @@ const LatestPost = async () => {
       {posts.map((post) => (
         <div
           key={post.id}
-          className="hover:scale-y-105 rounded-lg  m-4 w-[200px] pt-1 border-2 hover:bg-gradient-to-r from-purple-400"
+          className="hover:scale-y-105 rounded-lg  m-4 w-[300px]  border-2 hover:bg-gradient-to-r from-purple-400"
         >
           <Link href={`/latestPost/${post.id}`}>
             <Image
               src={post.image}
-              width={200}
-              height={200}
+              width={300}
+              height={300}
               alt="post-image"
+              className="rounded-t-lg"
             ></Image>
-            <h1>{post.heading}</h1>
-            <p>{post.postDate}</p>
+            <h1 className="text-center">{post.heading}</h1>
           </Link>
         </div>
       ))}
