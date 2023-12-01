@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { AiFillYoutube, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -12,7 +12,14 @@ const NavBar = () => {
     setMenu(!showMenu);
   }
   const router = useRouter();
+  const currentRoute = usePathname();
+  // styles for all links
+  const linkStyle =
+    "flex items-center  h-full no-underline hover:text-gray-600 duration-300";
 
+  // styles for active and non-active links
+  const activeStyle = linkStyle + " text-gray-400";
+  const nonActiveStyle = linkStyle + " text-white";
   const handleYoutube = () => {
     window.open("https://www.youtube.com/@SumanMalakar18/featured", "_blank");
   };
@@ -40,10 +47,24 @@ const NavBar = () => {
       <nav className=" lg:block md:hidden sm:hidden flex justify-center items-center m-2">
         <ul className="sm:text-1xl flex gap-7 mx:text-1xl  md:text-3xl md:font-bold">
           <li>
-            <Link href="/courses">courses</Link>
+            <Link
+              href="/courses"
+              className={
+                currentRoute === "/courses" ? activeStyle : nonActiveStyle
+              }
+            >
+              courses
+            </Link>
           </li>
           <li>
-            <Link href="/projects">projects</Link>
+            <Link
+              href="/projects"
+              className={
+                currentRoute === "/projects" ? activeStyle : nonActiveStyle
+              }
+            >
+              projects
+            </Link>
           </li>
           <li>
             <button onClick={handleYoutube}>
