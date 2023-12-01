@@ -26,9 +26,8 @@ const LatestPost = async () => {
               height={200}
               alt="post-image"
             ></Image>
-            <h1>{post.title}</h1>
+            <h1>{post.heading}</h1>
             <p>{post.postDate}</p>
-           
           </Link>
         </div>
       ))}

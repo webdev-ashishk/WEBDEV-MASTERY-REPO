@@ -10,18 +10,25 @@ async function getLatestPostData(id) {
 }
 const Page = async ({ params }) => {
   const data = await getLatestPostData(params.postid);
-  const posts = data.result;
-  console.log(posts);
+  const _posts = data.result;
+  const posts = _posts.morePost;
+  console.log(_posts.morePost);
   return (
-    <div>
+    <div className="border-2 p-2 rounded-lg m-5 flex justify-center items-center w-[500px]">
       post detail page
-      <ul>
-        <li>{posts.title}</li>
-        <li>{posts.postDate}</li>
-        <Link href={posts.videoLink} className="text-blue-400">
-          Video links
-        </Link>
-      </ul>
+      {posts.map((post) => {
+        return (
+          <div key={post._id}>
+            <ul>
+              <li>{post.title}</li>
+              <li>{post.postDate}</li>
+              <Link href={post.videoLink} className="text-blue-400">
+                Video links
+              </Link>
+            </ul>
+          </div>
+        );
+      })}
     </div>
   );
 };
