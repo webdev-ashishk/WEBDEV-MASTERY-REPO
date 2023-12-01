@@ -1,10 +1,21 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import LatestPost from "../app/latestPost/page";
 
 const Body = () => {
   return (
     <main>
+      {/* hero section  */}
+      <div className="flex justify-center items-center">
+        <Image
+          src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          width={600}
+          height={300}
+          alt="post-image"
+          className="rounded-t-lg"
+        ></Image>
+      </div>
       {/* important links  */}
       <div className="">
         <h1 className="text-3xl font-bold m-5">Important Links</h1>
