@@ -7,3 +7,4 @@
 > 5. How to use env in next js - done
 > 6. customize scroll bar - done
 > 7. add dark and light more - done
+> 8. Remove background-color of an image ?
