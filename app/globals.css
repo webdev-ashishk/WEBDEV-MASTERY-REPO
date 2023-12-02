@@ -27,11 +27,11 @@
 } */
 
 .light {
-  color: indigo;
+  color: black;
 }
 
 .dark {
-  color: greenyellow;
+  color: violet;
 }
 
 /* styles/scrollbar.css */

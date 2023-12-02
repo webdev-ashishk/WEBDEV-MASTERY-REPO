@@ -3,7 +3,7 @@ import Link from "next/link";
 const Courses = () => {
   return (
     <div>
-      <div className="flex justify-center flex-col items-center mt-5">
+      <div className="flex justify-center flex-col items-center mt-5 sm:mx-5">
         <h1 className="text-4xl top-5 font-bold mb-4">Courses</h1>
         <p className="mb-9 text-2xl">
           List of all Concept Videos here (यहां सभी कॉन्सेप्ट वीडियो की सूची है)

@@ -6,6 +6,7 @@ import { AiFillYoutube, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { RiComputerFill } from "react-icons/ri";
+import DarkLightSwitch from "./DarkLightSwitcher";
 const NavBar = () => {
   const [showMenu, setMenu] = useState(false);
   function toggleMenu() {
@@ -39,6 +40,9 @@ const NavBar = () => {
             <RiComputerFill />
           </Link>
         </snap>
+        <div className="sm:block lg:hidden md:hidden">
+          <DarkLightSwitch />
+        </div>
         <h1 className="sm:hidden lg:block md:block font-bold text-black ">
           <Link href={"/"}>SUMAN</Link>
         </h1>
@@ -80,6 +84,7 @@ const NavBar = () => {
               <FaLinkedin />
             </button>
           </li>
+          <DarkLightSwitch />
         </ul>
       </nav>
       {showMenu && (

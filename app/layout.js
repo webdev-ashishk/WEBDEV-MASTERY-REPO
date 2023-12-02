@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <UiContext>
           <NavBar />
-          <DarkLightSwitch />
+        
           <main> {children}</main>
           <Footer />
         </UiContext>

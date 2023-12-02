@@ -20,7 +20,7 @@ export default function DarkLightSwitch() {
       type="button"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
-      {resolvedTheme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"}
+      {resolvedTheme === "dark" ? "☀️" : "🌙 "}
     </button>
   );
 }

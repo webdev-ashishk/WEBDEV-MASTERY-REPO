@@ -13,7 +13,7 @@ const Body = () => {
           width={600}
           height={300}
           alt="post-image"
-          className="rounded-t-lg"
+          className="m-5"
         ></Image>
       </div>
       {/* important links  */}
