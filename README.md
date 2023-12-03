@@ -9,3 +9,4 @@
 > 7. add dark and light more - done
 > 8. Overlay on Hero section - done
 > 9. fixed nav bar issue (using context api) ?
+> 10. work with hamburger icons (with responsive design) ?

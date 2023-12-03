@@ -7,10 +7,8 @@ const Body = () => {
   return (
     <main>
       {/* hero section  */}
-      <div className="flex justify-center items-center w-full h-96 relative bg-gradient-to-tl from-purple-900 to green-700 ">
+      <div className="flex justify-center items-center w-full h-96 relative bg-gradient-to-tl from-purple-900 to green-700 -z-10 ">
         <Image
-          // src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          // src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           src="/hero.jpg"
           width={600}
           height={300}
@@ -28,7 +26,7 @@ const Body = () => {
       </div>
       {/* important links  */}
       <div className="">
-        <h1 className="text-3xl font-bold m-5">Important Links</h1>
+        <h1 className="text-3xl font-bold m-5">Important Links 👇 </h1>
         <ul className="flex justify-center gap-8 flex-wrap sm:gap-1">
           <li className="m-2">
             <button
@@ -54,7 +52,7 @@ const Body = () => {
       </div>
       {/* latest post  */}
       <div>
-        <h1 className="text-3xl font-bold m-5">Latest Posts</h1>
+        <h1 className="text-3xl font-bold m-5">Latest Posts 😍</h1>
         <div className="flex flex-wrap m-1 gap-3 justify-center items-center">
           <LatestPost />
         </div>
