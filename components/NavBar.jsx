@@ -41,7 +41,7 @@ const NavBar = () => {
               <RiComputerFill />
             </Link>
           </snap>
-          <div className="sm:block lg:hidden md:hidden">
+          <div className="sm:block lg:hidden md:hidden text-3xl mt-2">
             <DarkLightSwitch />
           </div>
           <h1 className="sm:hidden lg:block md:block font-bold">
@@ -49,7 +49,7 @@ const NavBar = () => {
           </h1>
         </div>
         <nav className=" lg:block md:hidden sm:hidden flex justify-center items-center m-2">
-          <ul className="sm:text-1xl flex gap-7 mx:text-1xl  md:text-3xl md:font-bold">
+          <ul className="sm:text-1xl flex gap-7 mx:text-1xl  md:text-3xl md:font-bold mr-8 justify-center items-center ">
             <li>
               <Link
                 href="/courses"
@@ -70,22 +70,24 @@ const NavBar = () => {
                 projects
               </Link>
             </li>
-            <li>
+            <li className="mt-3">
               <button onClick={handleYoutube}>
                 <AiFillYoutube />
               </button>
             </li>
-            <li>
+            <li className="mt-3">
               <button onClick={handleGitHub}>
                 <FaGithub />
               </button>
             </li>
-            <li>
+            <li className="mt-3">
               <button onClick={handleLinkedin}>
                 <FaLinkedin />
               </button>
             </li>
-            <DarkLightSwitch />
+            <li className="text-2xl mt-[2px]">
+              <DarkLightSwitch />
+            </li>
           </ul>
         </nav>
         {showMenu && (
