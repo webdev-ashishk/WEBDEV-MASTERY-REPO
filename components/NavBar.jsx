@@ -19,7 +19,7 @@ const NavBar = () => {
 
   // styles for active and non-active links
   const activeStyle = linkStyle + " text-gray-400";
-  const nonActiveStyle = linkStyle + " text-white";
+  const nonActiveStyle = linkStyle + " black";
   const handleYoutube = () => {
     window.open("https://www.youtube.com/@SumanMalakar18/featured", "_blank");
   };
@@ -33,96 +33,99 @@ const NavBar = () => {
     );
   };
   return (
-    <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 flex justify-between  sticky top-0">
-      <div className="flex  gap-4 text-5xl m-2 font-bold ">
-        <snap className="text-black">
-          <Link href={"/"}>
-            <RiComputerFill />
-          </Link>
-        </snap>
-        <div className="sm:block lg:hidden md:hidden">
-          <DarkLightSwitch />
+    <>
+      <div className="flex justify-between  sticky top-0 border-b border-b-cyan-400 shadow-lg">
+        <div className="flex  gap-4 text-5xl m-2 font-bold ">
+          <snap className="">
+            <Link href={"/"}>
+              <RiComputerFill />
+            </Link>
+          </snap>
+          <div className="sm:block lg:hidden md:hidden">
+            <DarkLightSwitch />
+          </div>
+          <h1 className="sm:hidden lg:block md:block font-bold">
+            <Link href={"/"}>SUMAN</Link>
+          </h1>
         </div>
-        <h1 className="sm:hidden lg:block md:block font-bold text-black ">
-          <Link href={"/"}>SUMAN</Link>
-        </h1>
-      </div>
-      <nav className=" lg:block md:hidden sm:hidden flex justify-center items-center m-2">
-        <ul className="sm:text-1xl flex gap-7 mx:text-1xl  md:text-3xl md:font-bold">
-          <li>
-            <Link
-              href="/courses"
-              className={
-                currentRoute === "/courses" ? activeStyle : nonActiveStyle
-              }
-            >
-              courses
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/projects"
-              className={
-                currentRoute === "/projects" ? activeStyle : nonActiveStyle
-              }
-            >
-              projects
-            </Link>
-          </li>
-          <li>
-            <button onClick={handleYoutube}>
-              <AiFillYoutube />
-            </button>
-          </li>
-          <li>
-            <button onClick={handleGitHub}>
-              <FaGithub />
-            </button>
-          </li>
-          <li>
-            <button onClick={handleLinkedin}>
-              <FaLinkedin />
-            </button>
-          </li>
-          <DarkLightSwitch />
-        </ul>
-      </nav>
-      {showMenu && (
-        <div className="fixed inset-x-0 top-16 flex flex-col items-center rounded-lg">
-          <ul className="w-full h-screen bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-3xl font-bold text-center">
-            <li className="mt-2">
-              <Link href="/courses">courses</Link>
+        <nav className=" lg:block md:hidden sm:hidden flex justify-center items-center m-2">
+          <ul className="sm:text-1xl flex gap-7 mx:text-1xl  md:text-3xl md:font-bold">
+            <li>
+              <Link
+                href="/courses"
+                className={
+                  currentRoute === "/courses" ? activeStyle : nonActiveStyle
+                }
+              >
+                courses
+              </Link>
             </li>
             <li>
-              <Link href="/projects">projects</Link>
+              <Link
+                href="/projects"
+                className={
+                  currentRoute === "/projects" ? activeStyle : nonActiveStyle
+                }
+              >
+                projects
+              </Link>
             </li>
-            <ul className="flex justify-center gap-5 m-4">
-              <li>
-                <button onClick={handleYoutube}>
-                  <AiFillYoutube />
-                </button>
-              </li>
-              <li>
-                <button onClick={handleGitHub}>
-                  <FaGithub />
-                </button>
-              </li>
-              <li>
-                <button onClick={handleLinkedin}>
-                  <FaLinkedin />
-                </button>
-              </li>
-            </ul>
+            <li>
+              <button onClick={handleYoutube}>
+                <AiFillYoutube />
+              </button>
+            </li>
+            <li>
+              <button onClick={handleGitHub}>
+                <FaGithub />
+              </button>
+            </li>
+            <li>
+              <button onClick={handleLinkedin}>
+                <FaLinkedin />
+              </button>
+            </li>
+            <DarkLightSwitch />
           </ul>
-        </div>
-      )}
-      <button
-        onClick={toggleMenu}
-        className="sm:block md:block lg:hidden m-3 text-3xl font-bold"
-      >
-        {showMenu ? <IoMdClose /> : <AiOutlineMenu />}
-      </button>
-    </div>
+        </nav>
+        {showMenu && (
+          <div className="fixed inset-x-0 top-16 flex flex-col items-center rounded-lg">
+            <ul className="w-full h-screen bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-3xl font-bold text-center">
+              <li className="mt-2">
+                <Link href="/courses">courses</Link>
+              </li>
+              <li>
+                <Link href="/projects">projects</Link>
+              </li>
+              <ul className="flex justify-center gap-5 m-4">
+                <li>
+                  <button onClick={handleYoutube}>
+                    <AiFillYoutube />
+                  </button>
+                </li>
+                <li>
+                  <button onClick={handleGitHub}>
+                    <FaGithub />
+                  </button>
+                </li>
+                <li>
+                  <button onClick={handleLinkedin}>
+                    <FaLinkedin />
+                  </button>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        )}
+        <button
+          onClick={toggleMenu}
+          className="sm:block md:block lg:hidden m-3 text-3xl font-bold"
+        >
+          {showMenu ? <IoMdClose /> : <AiOutlineMenu />}
+        </button>
+      </div>
+      {/* <hr className="sticky top-16" /> */}
+    </>
   );
 };
 

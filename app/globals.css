@@ -28,10 +28,12 @@
 
 .light {
   color: black;
+  /* background-color: #fff; */
 }
 
 .dark {
-  color: violet;
+  color: white;
+  background: #081424;
 }
 
 /* styles/scrollbar.css */

@@ -13,7 +13,7 @@ const Page = async ({ params }) => {
   const posts = _posts.morePost;
   console.log(_posts.morePost);
   return (
-    <div className="border-2 p-2 rounded-lg m-5 flex justify-center items-center flex-col flex-wrap">
+    <div className="m-5 flex justify-center items-center flex-col flex-wrap">
       post detail page
       {posts.map((post) => {
         return (
