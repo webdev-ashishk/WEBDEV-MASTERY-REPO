@@ -34,7 +34,7 @@ const NavBar = () => {
   };
   return (
     <>
-      <div className="flex justify-between  sticky top-0 border-b border-b-cyan-400 shadow-lg">
+      <div className="flex justify-between  sticky top-0 border-b border-b-gray-500 shadow-lg">
         <div className="flex  gap-4 text-5xl m-2 font-bold ">
           <snap className="">
             <Link href={"/"}>
