@@ -88,7 +88,7 @@ const NavBar = () => {
         </ul>
       </nav>
       {showMenu && (
-        <div className="fixed inset-x-0 top-14 flex flex-col items-center rounded-lg ">
+        <div className="fixed inset-x-0 top-16 flex flex-col items-center rounded-lg">
           <ul className="w-full h-screen bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-3xl font-bold text-center">
             <li className="mt-2">
               <Link href="/courses">courses</Link>
