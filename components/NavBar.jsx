@@ -90,14 +90,19 @@ const NavBar = () => {
             </li>
           </ul>
         </nav>
+        {/* when user click on hambugger icons  */}
         {showMenu && (
           <div className="fixed inset-x-0 top-16 flex flex-col items-center rounded-lg ">
             <ul className="w-full h-screen text-3xl font-bold text-center bg-black text-white">
               <li className="mt-2">
-                <Link href="/courses">courses</Link>
+                <button onClick={toggleMenu}>
+                  <Link href="/courses">courses</Link>
+                </button>
               </li>
               <li>
-                <Link href="/projects">projects</Link>
+                <button onClick={toggleMenu}>
+                  <Link href="/projects">projects</Link>
+                </button>
               </li>
               <ul className="flex justify-center gap-5 m-4">
                 <li>
