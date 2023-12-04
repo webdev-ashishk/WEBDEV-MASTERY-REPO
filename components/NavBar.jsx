@@ -15,10 +15,10 @@ const NavBar = () => {
   const router = useRouter();
   const currentRoute = usePathname();
   // styles for all links
-  const linkStyle = "flex items-center hover:text-gray-600 duration-300";
+  const linkStyle = "flex items-center hover:text-yellow-600 duration-300";
 
   // styles for active and non-active links
-  const activeStyle = linkStyle + " text-gray-400";
+  const activeStyle = linkStyle + " text-yellow-500";
   const nonActiveStyle = linkStyle + " black";
   const handleYoutube = () => {
     window.open("https://www.youtube.com/@SumanMalakar18/featured", "_blank");

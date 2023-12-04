@@ -13,13 +13,18 @@ const Body = () => {
           width={600}
           height={300}
           alt="post-image"
-          className="h-full w-full object-cover absolute mix-blend-overlay"
+          className="h-full w-full object-cover absolute mix-blend-overlay blur-sm	"
         ></Image>
         <div className="font-bold text-3xl p-2 w-full flex flex-col justify-center items-center">
-          <h1 className="text-white md:text-6xl sm:text-2xl">
-            Welcome to Awesome place@
+          <h1 className="text-white md:text-4xl sm:text-2xl">
+            <strong className="text-yellow-400 font-extrabold sm:text-3xl md:text-4xl lg:text-6xl mr-2">
+              Developer
+            </strong>
+            Courses in Hindi
           </h1>
-          <h2 className="text-yellow-500 md:text-3xl">wow wow wo wo wow owo</h2>
+          <i className="text-blue-200 md:text-3xl sm:text-[16px]">
+            &quot; Your best teacher is your last mistake&quot;
+          </i>
         </div>
       </div>
       {/* important links  */}
