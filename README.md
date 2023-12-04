@@ -10,5 +10,6 @@
 > 8. Overlay on Hero section - ✅
 > 9. fixed nav bar issue (using context api) ✅
 > 10. work with hamburger icons (with responsive design) ✅
-> 11. add bunch of api's ✅
-> 12. add gradient text in hero section - 
+> 11. add bunch of api's for latest Posts - ✅
+> 12. add skeleton for loading a data - ?
+> 13. create api for courses and Project - ?

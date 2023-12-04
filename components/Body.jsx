@@ -10,6 +10,7 @@ const Body = () => {
       <div className="flex justify-center items-center w-full h-80 relative bg-gradient-to-tl from-purple-900 to green-700 -z-10 ">
         <Image
           src="/hero22.gif"
+          // src="/bg.jpg"
           width={600}
           height={300}
           alt="post-image"
