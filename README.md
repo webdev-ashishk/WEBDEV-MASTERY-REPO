@@ -1,12 +1,14 @@
 # Tasks
 
-> 1. When user click on nav items then show active color - done
-> 2. make footer sticky to bottom - done
-> 3. Create backend for latest post - done
-> 4. fetch data from backend api - done
-> 5. How to use env in next js - done
-> 6. customize scroll bar - done
-> 7. add dark and light more - done
-> 8. Overlay on Hero section - done
-> 9. fixed nav bar issue (using context api) ?
-> 10. work with hamburger icons (with responsive design) ?
+> 1. When user click on nav items then show active color - ✅
+> 2. make footer sticky to bottom - ✅
+> 3. Create backend for latest post - ✅
+> 4. fetch data from backend api - ✅
+> 5. How to use env in next js - ✅
+> 6. customize scroll bar - ✅
+> 7. add dark and light more - ✅
+> 8. Overlay on Hero section - ✅
+> 9. fixed nav bar issue (using context api) ✅
+> 10. work with hamburger icons (with responsive design) ✅
+> 11. add bunch of api's ✅
+> 12. add gradient text in hero section - 

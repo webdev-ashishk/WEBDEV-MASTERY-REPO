@@ -35,7 +35,7 @@ const NavBar = () => {
   return (
     <>
       <div className="flex justify-between  sticky top-0 border-b border-b-gray-500 shadow-lg">
-        <div className="flex  gap-4 text-5xl m-2 font-bold ">
+        <div className="flex  gap-4 text-5xl m-2 ml-9 font-bold ">
           <snap className="">
             <Link href={"/"}>
               <RiComputerFill />
@@ -90,7 +90,7 @@ const NavBar = () => {
             </li>
           </ul>
         </nav>
-        {/* when user click on hambugger icons  */}
+        {/* when user click on Hamburger icons  */}
         {showMenu && (
           <div className="fixed inset-x-0 top-16 flex flex-col items-center rounded-lg ">
             <ul className="w-full h-screen text-3xl font-bold text-center bg-black text-white">

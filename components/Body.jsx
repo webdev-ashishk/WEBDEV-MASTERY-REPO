@@ -7,21 +7,19 @@ const Body = () => {
   return (
     <main>
       {/* hero section  */}
-      <div className="flex justify-center items-center w-full h-96 relative bg-gradient-to-tl from-purple-900 to green-700 -z-10 ">
+      <div className="flex justify-center items-center w-full h-80 relative bg-gradient-to-tl from-purple-900 to green-700 -z-10 ">
         <Image
-          src="/hero.jpg"
+          src="/hero22.gif"
           width={600}
           height={300}
           alt="post-image"
           className="h-full w-full object-cover absolute mix-blend-overlay"
         ></Image>
         <div className="font-bold text-3xl p-2 w-full flex flex-col justify-center items-center">
-          <h1 className="text-green-500 md:text-6xl sm:text-2xl">
+          <h1 className="text-white md:text-6xl sm:text-2xl">
             Welcome to Awesome place@
           </h1>
-          <h2 className="text-blue-500 md:text-3xl sm:text-1xl">
-            wow wow wo wo wow owo
-          </h2>
+          <h2 className="text-yellow-500 md:text-3xl">wow wow wo wo wow owo</h2>
         </div>
       </div>
       {/* important links  */}
