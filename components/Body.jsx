@@ -1,13 +1,24 @@
 "use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import LatestPost from "../app/latestPost/page";
-
 const Body = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   return (
     <main>
       {/* hero section  */}
-      <div className="flex justify-center items-center w-full h-80 relative bg-gradient-to-tl from-purple-900 to green-700 -z-10 ">
+      <div
+        data-aos="zoom-in-down"
+        className="flex justify-center items-center w-full h-80 relative bg-gradient-to-tl from-purple-900 to green-700 -z-10 "
+      >
         <Image
           src="/hero22.gif"
           // src="/bg.jpg"
@@ -29,7 +40,7 @@ const Body = () => {
         </div>
       </div>
       {/* important links  */}
-      <div className="">
+      <div>
         <h1 className="text-3xl font-bold m-5">Important Links 👇 </h1>
         <ul className="flex justify-center gap-8 flex-wrap sm:gap-1">
           <li className="m-2">

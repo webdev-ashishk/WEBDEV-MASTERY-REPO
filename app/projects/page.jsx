@@ -1,8 +1,17 @@
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Link from "next/link";
-
+import { useEffect } from "react";
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   return (
-    <div>
+    <div data-aos="fade-up">
       <div className="flex justify-center flex-col items-center mt-5">
         <h1 className="text-4xl top-5 font-bold mb-4">Projects 🎓 </h1>
         <p className="mb-9 text-2xl">

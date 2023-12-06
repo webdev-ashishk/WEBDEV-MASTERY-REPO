@@ -1,9 +1,21 @@
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Link from "next/link";
-
+import { useEffect } from "react";
 const Courses = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   return (
     <div>
-      <div className="flex justify-center flex-col items-center mt-5 sm:mx-5">
+      <div
+        data-aos="fade-up"
+        className="flex justify-center flex-col items-center mt-5 sm:mx-5"
+      >
         <h1 className="text-4xl top-5 font-bold mb-4">Courses 🎓</h1>
         <p className="mb-9 text-2xl">
           List of all Concept Videos here (यहां सभी कॉन्सेप्ट वीडियो की सूची है)
