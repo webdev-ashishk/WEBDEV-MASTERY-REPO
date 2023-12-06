@@ -13,3 +13,4 @@
 > 11. add bunch of api's for latest Posts - ✅
 > 12. add skeleton for loading a data - ?
 > 13. create api for courses and Project - ?
+> 14. add scroll animation to project -✅
