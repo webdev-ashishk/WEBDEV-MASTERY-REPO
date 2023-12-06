@@ -24,4 +24,29 @@ export const latestPostData = [
       },
     ],
   },
+  {
+    id: 2,
+    image: "https://www.boardinfinity.com/blog/content/images/2023/01/Mern.png",
+    heading: "MERN-STACK-PROJECT",
+    morePost: [
+      {
+        _id: 1010,
+        title:
+          "Master MERN STACK IN HINDI || Build & Deploy Full Stack Project",
+        ftitle:
+          "Master MERN STACK IN HINDI || Build &amp; Deploy Full Stack Project",
+        postDate: "01/12/2023",
+        src: "https://www.youtube.com/embed/5UGMn--LRd4",
+      },
+      {
+        _id: 10101,
+        title:
+          "React  Firebase Full Stack project In Hindi || Complete React Firebase Project",
+        ftitle:
+          "React  Firebase Full Stack project In Hindi || Complete React Firebase Project",
+        postDate: "01/12/2023",
+        src: "https://www.youtube.com/embed/0PKzc3mLOMM",
+      },
+    ],
+  },
 ];

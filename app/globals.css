@@ -40,7 +40,7 @@
 
 /* Track */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 7px;
   border-radius: 60px;
   background-color: rgba(0, 0, 139, 0.256);
 }

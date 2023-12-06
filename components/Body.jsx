@@ -61,6 +61,16 @@ const Body = () => {
           <LatestPost />
         </div>
       </div>
+      {/* test frame  */}
+      <iframe
+        width="1067"
+        height="600"
+        src="https://www.youtube.com/embed/0PKzc3mLOMM"
+        title="React  Firebase Full Stack project In Hindi || Complete React Firebase Project"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </main>
   );
 };
